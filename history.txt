@@ -1,0 +1,650 @@
+    1  git commit -m "Added hellow.py"
+    2  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+    3  git push -u origin main
+    4  git config --global user.email "oskar.kudzielko23@gmail.com"
+    5  git config user.email
+    6  git commit --amend --reset-author --no-edit
+    7  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+    8  git push -u origin main
+    9  ssh-keygen -t ed25519 -C "oskar.kudzielko23@gmail.com"
+   10  cat ~/.ssh/id_ed25519.pub | clip
+   11  cat ~/.ssh/id_ed25519.pub
+   12  git remote set-url origin git@github.com:OskarKudzielko/devopsweek1.git
+   13  git push -u origin main
+   14  cd week1
+   15  nano hellow.py
+   16  cd ..
+   17  git add hellow.py
+   18  cd week1
+   19  git add hellow.py
+   20  git commit -m "Added updated hellow.py"
+   21  git push
+   22  ls -l
+   23  cd devops
+   24  mkdir week2
+   25  cd week2
+   26  git init
+   27  git branch
+   28  git branch -m main
+   29  git pull../week1 main
+   30  git pull ../week1 main
+   31  git pull ../week1 master
+   32  cd ..
+   33  cd week1
+   34  git init -b main
+   35  git add .
+   36  ls -l
+   37  git commit -m "Added hello file"
+   38  cd week2
+   39  cd ..
+   40  cd week2
+   41  git pull ../week1 main
+   42  ls -l
+   43  nano hellow.py
+   44  git add .
+   45  git commit -m "Added a new sentence for the file"
+   46  git push origin main
+   47  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+   48  git push origin main
+   49  git remote set-url origin https://github.com
+   50  git push -u origin main
+   51  git remove remote origin
+   52  git remote remove origin
+   53  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+   54  git -c http.extraHeader="Authorization: Basic $(echo -n :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 | base64)" push -u origin main
+   55  git push origin main
+   56  git branch
+   57  git remote set-url origin "https://x-access-token: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@://github.com/OskarKudzielko/devopsWeek1"
+   58  git push -u origin main
+   59  git remote set-url origin "https://x-access-token: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@://github.com/OskarKudzielko/devopsWeek1"
+   60  git push -u origin main
+   61  git push origin main
+   62  git status
+   63  git push origin main
+   64  git remote set-url origin https://github.com/OskarKudzielko/devopsWeek1
+   65  git config --global credential.helper store
+   66  git remote set-url origin https://github.com/OskarKudzielko/devopsWeek1.git
+   67  git push -u origin main
+   68  git remote set-url origin https://github.com/OskarKudzielko/devopsWeek1.git
+   69  git push -u origin main
+   70  git push -f origin main
+   71  cd ..
+   72  git reflog
+   73  git remote set-url origin https://github.com/OskarKudzielko/devopsWeek1.git
+   74  git push -f origin main
+   75  git status
+   76  git add .
+   77  git rm --cached week2
+   78  git rm -f --cached week2
+   79  rm -rf week2/.git
+   80  git status
+   81  git add .
+   82  git commit -m "Added week2"
+   83  git push -f origin main
+   84  git log --oneline
+   85  git tag -a v1.0 0e34ad2 "Version 1 initial baseline files"
+   86  git tag -a v1.0 0e34ad2 -m "Version 1 initial baseline files"
+   87  git tag -a v2.0 59e2fe0 -m "Version 2 initial baseline files"
+   88  git push origin tags
+   89  git push origin --tags
+   90  mkdir week2tag
+   91  cd week2tag
+   92  git init -b main
+   93  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+   94  git fetch --all --tags
+   95  git checkout -b week1-tags tags/v1.0
+   96  git branch
+   97  git status
+   98  ls -l
+   99  nano hellow.py
+  100  git status
+  101  git add hellow.py
+  102  git commit -m "Added first line for the file within week1-tags"
+  103  git push -u origin week1-tags
+  104  ls -l
+  105  cd devops
+  106  cd week1
+  107  git status
+  108  git checkout -b CR101
+  109  git status
+  110  echo 'print("this is cr101")' > cr101.py
+  111  git status
+  112  git add cr101.py
+  113  git commit -m "Added cr101 file"
+  114  git status
+  115  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+  116  git push origin CR101
+  117  git status
+  118  git checkout -b feature-branch C102
+  119  git checkout -b C102
+  120  git status
+  121  echo 'print("this is cr102") > cr102.py
+  122  echo 'print("this is cr102")' > cr102.py
+  123  git status
+  124  git add cr102.py
+  125  git commit -m "Added cr102.py to cr102"
+  126  git status
+  127  git remote add origin https://github.com/OskarKudzielko/devopsWeek1.git
+  128  git status
+  129  git remote -v
+  130  git push origin CR102
+  131  git status
+  132  git push -u origin CR012
+  133  git push -u origin CR102
+  134  git push -u origin C102
+  135  git status
+  136  git branch -m CR102
+  137  git status
+  138  git push -u origin CR102
+  139  git push origin --delete C102
+  140  git switch main
+  141  git merge CR101 --allow-unrelated-histories -m "Merge CR101 into main"
+  142  git push origin main
+  143  git status
+  144  git pull origin main
+  145  git merge CR101 --allow-unrelated-histories -m "Merge CR101 into main"
+  146  git push origin main
+  147  git pull origin main --no-rebase
+  148  git pull origin main --no-rebase --allow-unrelated-histories
+  149  git push origin main
+  150  git switch main
+  151  git merge CR102
+  152  git push origin main
+  153  git push origin --delete CR102
+  154  git status
+  155  git merge CR101
+  156  git push origin main
+  157  git push origin main --force
+  158  git push origin --delete CR101
+  159  cd devops
+  160  ls -l
+  161  cd week1
+  162  ssh-keygen -t ed25519 -C "oskar.kudzielko23@gmail.com"
+  163  cat ~/.ssh/id_ed25519.pub
+  164  cd devopsWeek1
+  165  ls -l
+  166  cd devops
+  167  ls -l
+  168  cd week1
+  169  ls -l
+  170  cd ..
+  171  git remote add origin https://github.com/OskarKudzielko/devsopsProj.git
+  172  cd devops
+  173  git remote add origin https://github.com/OskarKudzielko/devsopsProj.git
+  174  cd devopsProj
+  175  cd ..
+  176  cd devopsProj
+  177  git status
+  178  cd devops
+  179  git status
+  180  cd ..
+  181  git clone https://github.com/OskarKudzielko/devsopsProj.git
+  182  ls -l
+  183  cd devopsProj
+  184  cd devsopsPorj
+  185  cd devsopsProj
+  186  bash count1.sh
+  187  git status
+  188  ls -l
+  189  cd devsposProj
+  190  cd devsopsProj
+  191  chmod +x count1.sh
+  192  printf '#!/bin/bash\necho 1\n./count2.sh\n' > count1.sh
+  193  chmod +x count1.sh
+  194  bash count1.sh
+  195  printf '#!/bin/bash\necho 2\n./count3.sh\n' > count2.sh
+  196  chmod +x count2.sh
+  197  printf '#!/bin/bash\necho 3\n./count4.sh\n' > count3.sh
+  198  chmod +x count3.sh
+  199  printf '#!/bin/bash\necho 4\n./count5.sh\n' > count4.sh
+  200  chmod +x count4.sh
+  201  printf '#!/bin/bash\necho 5\n./count6.sh\n' > count5.sh
+  202  chmod +x count5.sh
+  203  printf '#!/bin/bash\necho 6\n./count7.sh\n' > count6.sh
+  204  chmod +x count6.sh
+  205  printf '#!/bin/bash\necho 7\n./count8.sh\n' > count7.sh
+  206  chmod +x count7.sh
+  207  printf '#!/bin/bash\necho 8\n./count9.sh\n' > count8.sh
+  208  chmod +x count8.sh
+  209  printf '#!/bin/bash\necho 9\n./count10.sh\n' > count9.sh
+  210  chmod +x count9.sh
+  211  printf '#!/bin/bash\necho 10\n' > count10.sh
+  212  chmod +x count10.sh
+  213  bash count1.sh
+  214  bash count2.sh
+  215  git status
+  216  git add.
+  217  git add .
+  218  git status
+  219  git commit -m "Added 10 scripts"
+  220  git push origin main
+  221  printf '#!/bin/bash\necho TEN\n' > count10.sh
+  222  bash count1.sh
+  223  git status
+  224  git add .
+  225  git commit -m "Modified count10.sh to echo TEN"
+  226  git push origin main
+  227  mkdir v1
+  228  cd v1
+  229  git clone -b main https://github.com/OskarKudzielko/devsopsProj.git .
+  230  ls -l
+  231  git checkout -b ONE-V1
+  232  mkdir v2
+  233  cd v2
+  234  git clone -b main https://github.com/OskarKudzielko/devsopsProj.git
+  235  git checkout -b ONE-V2
+  236  cd ..
+  237  git status
+  238  printf '#!/bin/bash\necho "ONE(1)"\n./count2.sh\n' > count1.sh
+  239  bash count1.sh
+  240  git status
+  241  git checkout ONE-V1
+  242  git status
+  243  git add count1.sh
+  244  git commit -m "Modified count1.sh to output ONE(1)"
+  245  git push origin ONE-V1
+  246  cd v2
+  247  git status
+  248  git checkout ONE-V2
+  249  printf '#!/bin/bash\necho "1(ONE)"\n./count2.sh\n' > count1.sh
+  250  bash count1.sh
+  251  git status
+  252  git add count1.sh
+  253  git status
+  254  git commit -m "Modified count1.sh to output 1(ONE)"
+  255  git push origin ONE-V2
+  256  git status
+  257  cd ..
+  258  git status
+  259  cd ~
+  260  git status
+  261  cd devcopsProj
+  262  cd devsopsProj
+  263  git status
+  264  mkdir mergeTest
+  265  cd mergeTest
+  266  git clone -b main https://github.com/OskarKudzielko/devsopsProj.git
+  267  git status
+  268  git merge origin/ONE-V1
+  269  git merge ONE-V1
+  270  git status
+  271  cd ~
+  272  rm -rf ~/devopsProj/mergeTest
+  273  ls -l
+  274  cd devsopsProj
+  275  ls -l
+  276  rm -rf mergeTest
+  277  ls -l
+  278  git status
+  279  git add .
+  280  git rm --cached v1
+  281  git rm --cached -f v1
+  282  rm -rf v1/.git
+  283  git status
+  284  git add v1/
+  285  git rm --cached -f -v1
+  286  git rm --cached -f v1
+  287  git rm --cached -f -r v1
+  288  ls -l
+  289  git status
+  290  git add v1/
+  291  find v1 -name ".git" -type d -exec rm -rf {} +
+  292  git rm --cached -f -r v1
+  293  git status
+  294  git add v1/
+  295  git commit -m "Cleaned tangled folders"
+  296  git push origin main
+  297  cd ~
+  298  mkdir mergeTest
+  299  cd mergeTest
+  300  git clone -b main https://github.com/OskarKudzielko/devsopsProj.git
+  301  git pull origin ONE-V1
+  302  git status
+  303  cd devsopsProj
+  304  git pull origin ONE-V1
+  305  git pull origin ONE-V1 --no-rebase
+  306  git pull origin ONE-V2 --no-rebase
+  307  printf '#!/bin/bash\necho "ONE(1)"\n./count2.sh\n' > count1.sh
+  308  git status
+  309  git checkout origin/ONE-V2 -- count1.sh
+  310  git status
+  311  git reset HEAD count1.sh
+  312  git status
+  313  git restore count1.sh
+  314  git status
+  315  printf '#!/bin/bash\necho "ONE(1)"\n./count2.sh\n' > count1.sh
+  316  bash count1.sh
+  317  git status
+  318  git checkout ONE-V2
+  319  printf '#!/bin/bash\necho "1(ONE)"\n./count2.sh\n' > count1.sh
+  320  bash count1.sh
+  321  git status
+  322  git add count1.sh
+  323  git commit -m "Updated count1.sh to say 1(ONE) on ONE-V2"
+  324  git status
+  325  git checkout main
+  326  git merge ONE-V2
+  327  git merge ONE-V1
+  328  cd ~
+  329  cd devsopsProj
+  330  mkdir v1-2
+  331  cd v1-2
+  332  git clone http
+  333  git clone https://github.com/OskarKudzielko/devsopsProj.git .
+  334  cd devsopsProj
+  335  ls -l
+  336  git checkout -b TWO-V1
+  337  cd ..
+  338  mkdir v2-2
+  339  cd v202
+  340  cd 2-2
+  341  cd v2-2
+  342  git clone -b main https://github.com/OskarKudzielko/devsopsProj.git
+  343  cd ..
+  344  cd v1-2
+  345  git status
+  346  printf '#!/bin/bash\necho "TWO(2)"\n./count3.sh\n' > count2.sh
+  347  bash count2.sh
+  348  git push -u origin TWO-V1
+  349  cd ..
+  350  cd v2-2
+  351  printf '#!/bin/bash\necho 
+  352  clear
+  353  printf '#!/bin/bash\necho "TWO(2
+  354  cd devsopsProj
+  355  ls -l
+  356  cd v2-2
+  357  printf '#!/bin/bash\necho "2(TWO)"\n./count3.sh\n' > count2.sh
+  358  bash count2.sh
+  359  git status
+  360  git add .
+  361  git status
+  362  git reset
+  363  git status
+  364  git checkout TWO-V2
+  365  git checkout -b TWO-V2
+  366  git status
+  367  printf '#!/bin/bash\necho "TWO(2)"\n./count3.sh\n' > count2.sh
+  368  bash count1.sh
+  369  bash count2.sh
+  370  git push -u origin TWO-V2
+  371  ls -l
+  372  mkdir asignment test
+  373  cd asignment test
+  374  ls -l
+  375  cd asignment
+  376  git init
+  377  git remote add origin https://github.com/pearse1104/X00227240.git
+  378  git status
+  379  echo "This is a test file" > test.txt
+  380  git status
+  381  git add test.txt
+  382  git commit -m "Added test file"
+  383  git status
+  384  git push -u origin main
+  385  git push -u origin master
+  386  git remote set https://github.com/OskarKudzielko/test.git
+  387  git remote set-url https://github.com/OskarKudzielko/test.git
+  388  git remote set-url origin https://github.com/OskarKudzielko/test.git
+  389  git push -u origin master
+  390  git status
+  391  git checkout main
+  392  git checkout -b main
+  393  echo "This is a test file" > test2.txt
+  394  ls -l
+  395  git status
+  396  rm test.txt
+  397  ls -l
+  398  git add .
+  399  git commit -m "Added test file"
+  400  git branch -M main
+  401  git remote add origin https://github.com/pearse1104/X00227240.git
+  402  git remote -v
+  403  git remote set-url origin https://github.com/pearse1104/X00227240.git
+  404  git remote v
+  405  git remote -v
+  406  git status
+  407  git push origin main
+  408  ls -l
+  409  cd devops
+  410  mkdir test
+  411  rm test
+  412  rm -d test
+  413  mkdir folder
+  414  cd folder
+  415  git init
+  416  git branch -m main
+  417  git status
+  418  echo "Test file" >> test.txt
+  419  git add test.txt
+  420  git commit -m "Added test file"
+  421  git status
+  422  git remote add origin git@github.com:pearse1104/X00227240.git
+  423  git push -u origin main
+  424  git --help
+  425  ls -l
+  426  cd devops
+  427  git status
+  428  git checkout main
+  429  clear
+  430  git clone https://github.com/pearse1104/CA1-SOFTWARE.git
+  431  git status
+  432  bash user-setup.sh
+  433  ls -l
+  434  cd CA1-Software
+  435  cd CA1-SOFTWARE
+  436  bash user-setup.sh
+  437  ls -l
+  438  git status
+  439  cd ..
+  440  ls --l
+  441  cd ..
+  442  ls -l
+  443  cd devops
+  444  cd CA1-SOFTWARE
+  445  cd ..
+  446  cd devops
+  447  cd CA1-SOFTWARE
+  448  git remote add origin https://github.com/OskarKudzielko/devopsCA1sw.git
+  449  cd ..
+  450  git remote add origin https://github.com/OskarKudzielko/devopsCA1sw.git
+  451  git init
+  452  git checkout main
+  453  git checkout -b main
+  454  git init
+  455  git remote add origin https://github.com/OskarKudzielko/devopsCA1sw.git
+  456  git status
+  457  git add user.txt
+  458  git add .
+  459  git commit -m "Added all to repo ca1sw"
+  460  git status
+  461  git remote add origin https://github.com/pearse1104/X00227240.git
+  462  git remote set-url https://github.com/pearse1104/X00227240.git
+  463  git status
+  464  git push -u origin main
+  465  ls -l
+  466  cd devops
+  467  cd CA1-SOFTWARE
+  468  git status
+  469  git add .
+  470  git commit -m "User.txt added"
+  471  git push -u origin main
+  472  git status
+  473  git remote add origin https://github.com/OskarKudzielko/devopsCA1sw.git
+  474  cd ..
+  475  git remote add origin https://github.com/OskarKudzielko/devopsCA1sw.git
+  476  git branch -M main
+  477  git push -u origin main
+  478  git clone https://github.com/pearse1104/X00227240.git
+  479  git status
+  480  cd ..
+  481  ls -l
+  482  cd ..
+  483  cd .
+  484  ..
+  485  vf .
+  486  cd ..
+  487  git init
+  488  git status
+  489  git init
+  490  git git remote add origin git@github.com:OskarKudzielko/devopsCA1sw.git
+  491  git remote add origin git@github.com:OskarKudzielko/devopsCA1sw.git
+  492  git push -u origin main
+  493  ls -l
+  494  gh repo create lab9 --public
+  495  git auth login
+  496  gh auth login
+  497  gh auth status
+  498  gh repo create lab9 --public
+  499  gh auth logout
+  500  gh auth login
+  501  git auth status
+  502  gh auth status
+  503  gh auth login
+  504  gh repo create lab9 --public
+  505  gh auth login
+  506  gh repo create lab9 --public
+  507  cat << 'EOF' > validate-data.sh
+#!/bin/bash
+
+# Check if both arguments are provided
+if [ $# -ne 2 ]; then
+    echo "FAIL"
+    exit 1
+fi
+
+name="$1"
+mobile="$2"
+
+# Check if name is <= 15 chars AND mobile is <= 10 chars
+if [ ${#name} -le 15 ] && [ ${#mobile} -le 10 ]; then
+    echo "PASS"
+else
+    echo "FAIL"
+fi
+EOF
+
+  508  chmod +x validate-data.sh
+  509  ./validate-data.sh "John Doe" 1234567890
+  510  mkdir -p .github/workflows
+  511  cat << 'EOF' > .github/workflows/basictests.yml
+name: Basic Validation Tests
+
+on:
+  push:
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Ensure script is executable
+        run: chmod +x validate-data.sh
+
+      - name: Run Test 1 (Valid inputs - expects PASS)
+        run: |
+          output=$(./validate-data.sh "John Doe" 1234567890)
+          echo "Test 1 Output: $output"
+          [ "$output" = "PASS" ]
+
+      - name: Run Test 2 (Name too long - expects FAIL)
+        run: |
+          output=$(./validate-data.sh "Bartholomew Roberts" 1234567890)
+          echo "Test 2 Output: $output"
+          [ "$output" = "FAIL" ]
+
+      - name: Run Test 3 (Mobile too long - expects FAIL)
+        run: |
+          output=$(./validate-data.sh "Jane Smith" 123456789012)
+          echo "Test 3 Output: $output"
+          [ "$output" = "FAIL" ]
+EOF
+
+  512  git add validate-data.sh .github/workflows/basictests.yml
+  513  git commit -m "Added validation script and lab 9 workflow tests"
+  514  git push
+  515  git push -u origin main
+  516  git push
+  517  git push -u origin main
+  518  git remote set-url origin https://github.com/OskarKudzielko/lab9
+  519  git push -u origin main
+  520  cd ~ && rm -rf .git
+  521  mkdir -p ~/lab9/.github/workflows && cd ~/lab9
+  522  cp ~/validate-data.sh . && cp ~/.github/workflows/basictests.yml .github/workflows/
+  523  git init -b main
+  524  git remote add origin https://github.com
+  525  git remote add origin https://github.com/OskarKudzielko/lab9.git
+  526  git remote set-url origin https://github.com/OskarKudzielko/lab9.git
+  527  git add validate-data.sh .github/workflows/basictests.yml
+  528  git commit -m "Add validation script and lab9-basic-tests workflow"
+  529  git push -u origin main
+  530  git remote -v
+  531  git checkout -b test
+  532  cat << 'EOF' > validate-data.sh
+#!/bin/bash
+
+# Check if both arguments are provided
+if [ $# -ne 2 ]; then
+    echo "FAIL"
+    exit 1
+fi
+
+name="$1"
+mobile="$2"
+
+# Check if name is <= 20 chars AND mobile is <= 10 chars
+if [ ${#name} -le 20 ] && [ ${#mobile} -le 10 ]; then
+    echo "PASS"
+else
+    echo "FAIL"
+fi
+EOF
+
+  533  chmod +x validate-data.sh
+  534  cat << 'EOF' > .github/workflows/basictests.yml
+name: Basic Validation Tests
+
+on:
+  push:
+    branches:
+      - main
+      - test
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Ensure script is executable
+        run: chmod +x validate-data.sh
+
+      - name: Run Test 1 (Valid inputs - expects PASS)
+        run: |
+          output=$(./validate-data.sh "John Doe" 1234567890)
+          echo "Test 1 Output: $output"
+          [ "$output" = "PASS" ]
+
+      - name: Run Test 2 (Name too long > 20 chars - expects FAIL)
+        run: |
+          output=$(./validate-data.sh "Bartholomew Roberts Jr." 1234567890)
+          echo "Test 2 Output: $output"
+          [ "$output" = "FAIL" ]
+
+      - name: Run Test 3 (Mobile too long > 10 chars - expects FAIL)
+        run: |
+          output=$(./validate-data.sh "Jane Smith" 123456789012)
+          echo "Test 3 Output: $output"
+          [ "$output" = "FAIL" ]
+EOF
+
+  535  git add validate-data.sh .github/workflows/basictests.yml
+  536  git commit -m "Increased length to 20 and fixed workflows"
+  537  git push -u origin test
+  538  git status
+  539  history > history.txt
