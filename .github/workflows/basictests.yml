@@ -1,0 +1,33 @@
+name: Basic Validation Tests
+
+on:
+  push:
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Ensure script is executable
+        run: chmod +x validate-data.sh
+
+      - name: Run Test 1 (Valid inputs - expects PASS)
+        run: |
+          output=$(./validate-data.sh "John Doe" 1234567890)
+          echo "Test 1 Output: $output"
+          [ "$output" = "PASS" ]
+
+      - name: Run Test 2 (Name too long - expects FAIL)
+        run: |
+          output=$(./validate-data.sh "Bartholomew Roberts" 1234567890)
+          echo "Test 2 Output: $output"
+          [ "$output" = "FAIL" ]
+
+      - name: Run Test 3 (Mobile too long - expects FAIL)
+        run: |
+          output=$(./validate-data.sh "Jane Smith" 123456789012)
+          echo "Test 3 Output: $output"
+          [ "$output" = "FAIL" ]
