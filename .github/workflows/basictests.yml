@@ -2,6 +2,9 @@ name: Basic Validation Tests
 
 on:
   push:
+    branches:
+      - main
+      - test
 
 jobs:
   lab9-basic-tests:
@@ -20,13 +23,13 @@ jobs:
           echo "Test 1 Output: $output"
           [ "$output" = "PASS" ]
 
-      - name: Run Test 2 (Name too long - expects FAIL)
+      - name: Run Test 2 (Name too long > 20 chars - expects FAIL)
         run: |
-          output=$(./validate-data.sh "Bartholomew Roberts" 1234567890)
+          output=$(./validate-data.sh "Bartholomew Roberts Jr." 1234567890)
           echo "Test 2 Output: $output"
           [ "$output" = "FAIL" ]
 
-      - name: Run Test 3 (Mobile too long - expects FAIL)
+      - name: Run Test 3 (Mobile too long > 10 chars - expects FAIL)
         run: |
           output=$(./validate-data.sh "Jane Smith" 123456789012)
           echo "Test 3 Output: $output"
